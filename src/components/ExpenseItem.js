@@ -3,10 +3,6 @@ import Card from "./Card";
 import "./ExpenseItem.css";
 
 function ExpenteItem(props) {
-  const month = props.date.toLocaleString("tr-TR", { month: "long" });
-  const year = props.date.getFullYear();
-  const day = props.date.toLocaleString("tr-TR", { day: "2-digit" });
-
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
